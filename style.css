@@ -180,6 +180,60 @@ body {
   transform: scale(0.9);
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social ul {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social ul li a{
+  color: var(--text-color);
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.45rem;
+}
+
+.footer-end {
+  background: #000;
+  color: var(--text-color);
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.language {
+  text-decoration: underline;
+}
+
+@media (max-width: 840px) {
+  .projects-shower {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-shower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 511px) {
+  .projects-shower {
+    grid-template-columns: 1fr;
+  }
+}
+
 @keyframes animName {
   0% {color: var(--text-color);}
   50% {color: hsl(172, 100%, 61%);}
