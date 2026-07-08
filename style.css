@@ -120,6 +120,66 @@ body {
   text-align: center;
 }
 
+.projects-carousel-group {
+  padding: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.projects-shower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.2rem;
+  border-radius: 10px;
+  background: #8fa2e9;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-img {
+  border-start-end-radius: 10px;
+  border-start-start-radius: 10px;
+  max-width: 100%;
+  aspect-ratio: 16 / 8;
+}
+
+.project-name {
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 2rem;
+  padding: .45rem;
+}
+
+.project-test-link {
+  font-family: "Prompt", sans-serif;
+  margin-top: .85rem;
+  text-align: center;
+  text-decoration: none;
+  background: #283e8f;
+  font-size: 1.5rem;
+  color: #8fa2e9;
+  padding: .85rem;
+  width: 45%;
+  min-width: fit-content;
+  border-radius: 6px;
+  transition: 220ms ease;
+}
+
+.project-test-link:hover {
+  transform: translateY(-2px);
+}
+
+.project-test-link:active {
+  transform: scale(0.9);
+}
+
 @keyframes animName {
   0% {color: var(--text-color);}
   50% {color: hsl(172, 100%, 61%);}
